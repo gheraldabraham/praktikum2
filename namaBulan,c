@@ -1,0 +1,65 @@
+/* Nama         : Gherald Abraham
+   NIM          : 24060123140210
+   Kelas        : A
+   Nama Program : namaBulan.c
+   Deskripsi    : Mengecek dan menampilkan ke layar dari inputan 1-12 sesuai nama bulan
+*/
+
+
+#include <stdio.h>
+
+int main() {
+    
+    //Kamus
+    int B;
+
+    //Algoritma
+    printf("Masukkan nomor Bulan (1-12): ");
+    scanf("%d", &B);
+
+    
+    if (B >= 1 && B <= 12) {
+        switch (B) {
+            case 1:
+                printf("Bulan Januari\n");
+                break;
+            case 2:
+                printf("Bulan Februari\n");
+                break;
+            case 3:
+                printf("Bulan Maret\n");
+                break;
+            case 4:
+                printf("Bulan April\n");
+                break;
+            case 5:
+                printf("Bulan Mei\n");
+                break;
+            case 6:
+                printf("Bulan Juni\n");
+                break;
+            case 7:
+                printf("Bulan Juli\n");
+                break;
+            case 8:
+                printf("Bulan Agustus\n");
+                break;
+            case 9:
+                printf("Bulan September\n");
+                break;
+            case 10:
+                printf("Bulan Oktober\n");
+                break;
+            case 11:
+                printf("Bulan November\n");
+                break;
+            case 12:
+                printf("Bulan Desember\n");
+                break;            
+        }
+    } else {
+        printf("Masukan nomor bulan tidak tepat.\n");
+    }
+
+    return 0;
+}
